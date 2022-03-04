@@ -1,3 +1,6 @@
+// Author name: Rushin Barvadia
+// Student Id: 301227529
+// WebApp name: COMP229022-W2022-Midterm-302117529
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -13,7 +16,7 @@ mongoose.connect(dbURI.AtlasDB);
 
 let mongoDB = mongoose.connection;
 mongoDB.on('error', console.error.bind(console, 'Connection Error:'));
-mongoDB.once('open', ()=>{
+mongoDB.once('open', () => {
   console.log('Connected to MongoDB...');
 });
 
@@ -37,12 +40,12 @@ app.use('/', indexRouter);
 app.use('/movie', movieRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
