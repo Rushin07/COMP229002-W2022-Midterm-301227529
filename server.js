@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-
+var dbConfig = require('./config/db');
 var app = require('./config/app');
 var debug = require('debug')('comp229midterm:server');
 var http = require('http');
