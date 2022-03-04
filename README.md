@@ -1,2 +1,2 @@
-# COMP229002-W2022-MidTerm-301227529
- Midterm_exam
+# comp229-W2022-midterm-template
+COMP229 W2022 Midterm template
